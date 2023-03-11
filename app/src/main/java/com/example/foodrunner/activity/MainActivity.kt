@@ -102,7 +102,7 @@ class MainActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frameLayout, FavoriteRestaurantFragment(this))
                         .commit()
-                    supportActionBar?.title = "Favourites HomeRestaurant"
+                    supportActionBar?.title = "Favourites Restaurant"
                     drawerLayout.closeDrawers()
 
                     Toast.makeText(this, "Clicked on Favourite HomeRestaurant", Toast.LENGTH_SHORT).show()
