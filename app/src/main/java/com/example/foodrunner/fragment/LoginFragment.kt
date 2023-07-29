@@ -197,6 +197,7 @@ class LoginFragment(val contextParam: Context) : Fragment() {
         activity?.finish()
     }
 
+   // Check Intenet Connection
     override fun onResume() {
         if (!ConnectionManager().checkConnectivity(activity as Context)) {
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
